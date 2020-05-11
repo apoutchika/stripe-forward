@@ -4,8 +4,8 @@ Simple stripe forward for docker compose
 
 ## Environments Variables
 
-- STRIP_SECRET: Secret key of Stripe
-- URL: forward url
+- `STRIP_SECRET`: Secret key of Stripe
+- `URL`: forward url
 
 ## Exemple
 
@@ -23,7 +23,7 @@ services:
   stripe:
     image: apoutchika/stripe-forward
     environment:
-      URL: 'http://api:8080/webhook'
+      URL: 'http://api/webhook'
       STRIP_SECRET: sk_test_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     depends_on:
       - api
