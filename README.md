@@ -28,3 +28,7 @@ services:
     depends_on:
       - api
 ```
+
+## Changlog
+
+- 0.1.4 : Update to last stripe version 1.5.8
